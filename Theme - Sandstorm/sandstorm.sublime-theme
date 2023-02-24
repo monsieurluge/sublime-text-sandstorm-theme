@@ -1,0 +1,645 @@
+{
+    "variables":
+    {
+        "background": "#3b3a36",    // main background _ peat
+        // foreground variables
+        "c1_base": "#e5ccaf",       // code _ gray sand
+        "c2_base": "#fc9e21",       // keywords _ radiant yellow
+        "c3_base": "#bd8b69",       // types, scope modifiers _ sandstorm
+        "c4_base": "#685e4f",       // comments, gutter _ stone gray
+        // background variables
+        "c5_base": "#44413c",       // line highlight, status bar _ black ink
+        "c6_base": "#9e1030",       // invalid _ jester red
+        "c7_base": "black",         // unused
+        "c8_base": "black",         // unused
+        // fonts
+        "base_font_size": 10,
+    },
+    "rules":
+    [
+        {
+            "class": "title_bar",
+            "fg": "var(c1_base)",
+            "bg": "var(c5_base)",
+        },
+        // -------------------------------------------------------------- LABELS
+        {
+            "class": "label_control",
+            "color": "var(c1_base)",
+            "font.size": "var(base_font_size)",
+        },
+        {
+            "class": "title_label_control",
+            "color": "var(c2_base)",
+            "font.size": "var(base_font_size)",
+            "bold": true
+        },
+        // -------------------------------------------------------- AUTOCOMPLETE
+        {
+            "class": "auto_complete",
+            "row_padding": [12, 6],
+            "layer0.tint": "var(c5_base)",
+            "layer0.opacity": 1.0,
+        },
+        {
+            "class": "table_row",
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 0.0,
+        },
+        {
+            "class": "table_row",
+            "attributes": ["selected"],
+            "layer0.opacity": 0.2,
+        },
+        {
+            "class": "table_row",
+            "attributes": ["hover"],
+            "layer0.opacity": 0.1,
+        },
+        {
+            "class": "auto_complete_label",
+            "fg": "var(c1_base)",
+            "match_fg": "var(c2_base)",
+            "selected_fg": "var(c1_base)",
+            "selected_match_fg": "var(c2_base)",
+        },
+        // ------------------------------------------------------------- BUTTONS
+        {
+            "class": "button_control",
+            "content_margin": [6, 8],
+            "min_size": [75, 0],
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 0.1,
+        },
+        {
+            "class": "button_control",
+            "attributes": ["hover"],
+            "layer0.opacity": 0.3,
+        },
+        {
+            "class": "button_control",
+            "attributes": ["pressed"],
+            "layer0.opacity": 0.2,
+        },
+        {
+            "class": "icon_button_group",
+            "spacing": 3
+        },
+        {
+            "class": "icon_button_control",
+            "content_margin": 6,
+            "layer0.inner_margin": 6,
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 0.0,
+        },
+        {
+            "class": "icon_button_control",
+            "attributes": ["hover"],
+            "layer0.opacity": 0.2
+        },
+        {
+            "class": "icon_button_control",
+            "attributes": ["pressed"],
+            "layer0.opacity": 0.3
+        },
+        // dedicated icons
+        {
+            "class": "icon_regex",
+            "content_margin": 10,
+            "layer0.texture": "Theme - Sandstorm/assets/regex.png",
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "icon_regex",
+            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(c2_base)",
+        },
+        {
+            "class": "icon_case",
+            "content_margin": 10,
+            "layer0.texture": "Theme - Sandstorm/assets/case.png",
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "icon_case",
+            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(c2_base)",
+        },
+        {
+            "class": "icon_highlight",
+            "content_margin": 10,
+            "layer0.texture": "Theme - Sandstorm/assets/highlight.png",
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "icon_highlight",
+            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(c2_base)",
+        },
+        {
+            "class": "icon_in_selection",
+            "content_margin": 10,
+            "layer0.texture": "Theme - Sandstorm/assets/in_selection.png",
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "icon_in_selection",
+            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(c2_base)",
+        },
+        {
+            "class": "icon_use_gitignore",
+            "content_margin": 10,
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "icon_use_gitignore",
+            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(c2_base)",
+        },
+        {
+            "class": "icon_reverse",
+            "content_margin": 10,
+            "layer0.texture": "Theme - Sandstorm/assets/TEMP_ICON.png",
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "icon_reverse",
+            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(c2_base)",
+        },
+        {
+            "class": "icon_whole_word",
+            "content_margin": 10,
+            "layer0.texture": "Theme - Sandstorm/assets/whole.png",
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "icon_whole_word",
+            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(c2_base)",
+        },
+        {
+            "class": "icon_wrap",
+            "content_margin": 10,
+            "layer0.texture": "Theme - Sandstorm/assets/wrap.png",
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "icon_wrap",
+            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(c2_base)",
+        },
+        {
+            "class": "icon_preserve_case",
+            "content_margin": 10,
+            "layer0.texture": "Theme - Sandstorm/assets/preserve_case.png",
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "icon_preserve_case",
+            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(c2_base)",
+        },
+        {
+            "class": "icon_context",
+            "content_margin": 10,
+            "layer0.texture": "Theme - Sandstorm/assets/show_context.png",
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "icon_context",
+            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(c2_base)",
+        },
+        {
+            "class": "icon_use_buffer",
+            "content_margin": 10,
+            "layer0.texture": "Theme - Sandstorm/assets/use_buffer.png",
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "icon_use_buffer",
+            "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+            "layer0.tint": "var(c2_base)",
+        },
+        // ------------------------------------------------------------- DIALOGS
+        {
+            "class": "dialog",
+            "layer0.tint": "var(c5_base)",
+            "layer0.opacity": 1.0
+        },
+        // -------------------------------------------------------------- INPUTS
+        {
+            "class": "text_line_control",
+            "content_margin": [8, 6],
+            "color_scheme_tint": "var(c5_base)",
+        },
+        {
+            "class": "text_line_control",
+            "content_margin": [8, 6],
+            "color_scheme_tint": "var(background)",
+            "parents": [{"class": "panel_control console_panel"}],
+        },
+        {
+            "class": "dropdown_button_control",
+            "content_margin": 8,
+            "layer0.texture": "Theme - Sandstorm/assets/chevron_down.png",
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 1.0,
+        },
+        {
+            "class": "dropdown_button_control",
+            "attributes": ["hover"],
+            "layer0.tint": "var(c2_base)"
+        },
+        // -------------------------------------------------------------- PANELS
+        {
+            "class": "panel_control",
+            "content_margin": [6, 12],
+            "layer0.tint": "var(c5_base)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "panel_control input_panel",
+            "content_margin": 12
+        },
+        {
+            "class": "panel_control output_panel",
+            "content_margin": [0, 8]
+        },
+        {
+            "class": "panel_control console_panel",
+            "content_margin": 12
+        },
+        {
+            "class": "panel_control switch_panel",
+            "content_margin": 12
+        },
+        {
+            "class": "text_output_control",
+            "content_margin": [30, 20, 30, 20],
+            "color_scheme_tint": "var(c5_base)",
+        },
+        {
+            "class": "panel_close_button",
+            "content_margin": 0,
+        },
+        // -------------------------------------------------------- PROGRESS BAR
+        {
+            "class": "progress_bar_control",
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "progress_gauge_control",
+            "layer0.tint": "var(c2_base)",
+            "content_margin": [0, 6]
+        },
+        // --------------------------------------------------------- QUICK PANEL
+        {
+            "class": "overlay_control",
+            "content_margin": 30,
+            "layer0.tint": "var(c5_base)",
+            "layer0.opacity": 1.0,
+        },
+        {
+            "class": "quick_panel",
+            "row_padding": [16, 8],
+            "layer0.tint": "var(c5_base)",
+            "layer0.opacity": 1.0,
+            "layer1.tint": "var(c5_base)",
+            "layer1.opacity": 1.0,
+        },
+        {
+            "class": "mini_quick_panel_row",
+            "layer0.tint": "var(c5_base)",
+            "layer0.opacity": 1.0,
+        },
+        {
+            "class": "mini_quick_panel_row",
+            "attributes": ["hover"],
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 0.1,
+        },
+        {
+            "class": "mini_quick_panel_row",
+            "attributes": ["selected"],
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 0.2,
+        },
+        {
+            "class": "quick_panel_row",
+            "layer0.tint": "var(c5_base)",
+            "layer0.opacity": 1.0,
+            "layer1.tint": "var(c1_base)",
+            "layer1.opacity": 0.0,
+        },
+        {
+            "class": "quick_panel_row",
+            "attributes": ["hover"],
+            "layer1.opacity": 0.1,
+        },
+        {
+            "class": "quick_panel_row",
+            "attributes": ["selected"],
+            "layer1.opacity": 0.2,
+        },
+        {
+            "class": "quick_panel_label",
+            "fg": "var(c1_base)",
+            "match_fg": "var(c2_base)",
+            "selected_fg": "var(c1_base)",
+            "selected_match_fg": "var(c2_base)"
+        },
+        {
+            "class": "quick_panel_path_label",
+            "fg": "var(c4_base)",
+            "match_fg": "var(c1_base)",
+            "selected_fg": "var(c3_base)",
+            "selected_match_fg": "var(c2_base)"
+        },
+        {
+            "class": "quick_panel_detail_label",
+            "link_color": "var(c4_base)",
+        },
+        {
+            "class": "quick_panel_detail_label",
+            "parents": [{"class": "quick_panel_row","attributes": ["selected"]}],
+            "link_color": "var(c3_base)",
+        },
+        // ---------------------------------------------------------- STATUS BAR
+        {
+            "class": "status_bar",
+            "content_margin": [18, 6],
+            "layer0.tint": "var(c5_base)",
+            "layer0.opacity": 1.0,
+        },
+        {
+            "class": "panel_button_control",
+            "content_margin": 10,
+            "layer0.texture": "Theme - Sandstorm/assets/menu.png",
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 1.0
+        },
+        {
+            "class": "status_button",
+            "content_margin": [8, 3, 8, 3],
+            "min_size": [70, 22],
+        },
+        // ------------------------------------------------ SWITCH PROJECT PANEL
+        {
+            "class": "quick_panel",
+            "parents": [{"class": "switch_project_window"}],
+            "layer0.tint": "var(c7_base)",
+            "layer0.opacity": 1.0
+        },
+        // ---------------------------------------------------------------- TABS
+        // tab set
+        {
+            "class": "tabset_control",
+            "tab_overlap": 2,
+            "tab_min_width": 100,
+            "tab_height": 30,
+            "mouse_wheel_switch": false,
+            "layer0.tint": "var(background)",
+            "layer0.opacity": 1.0,
+        },
+        // left scroll button
+        {
+            "class": "scroll_tabs_left_button",
+            "content_margin": [0, 0]
+        },
+        // right scroll button
+        {
+            "class": "scroll_tabs_right_button",
+            "content_margin": [0, 0]
+        },
+        // tab
+        {
+            "class": "tab_control",
+            "content_margin": [16, 0, 16, 0],
+            "max_margin_trim": 6,
+        },
+        // label
+        {
+            "class": "tab_label",
+            "fg": "var(c4_base)",
+            "font.size": "var(base_font_size)",
+        },
+        // label - inactive view
+        {
+            "class": "tab_label",
+            "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+            "fg": "var(c1_base)",
+        },
+        // label - current view
+        {
+            "class": "tab_label",
+            "parents": [{"class": "tab_control", "attributes": ["highlighted"]}],
+            "fg": "var(c2_base)",
+        },
+        // label - transient
+        {
+            "class": "tab_label",
+            "attributes": ["transient"],
+            "font.italic": true
+        },
+        // close button
+        {
+            "class": "tab_close_button",
+            "content_margin": [0, 0],
+        },
+        // "show tabs" dropdown button
+        {
+            "class": "show_tabs_dropdown_button",
+            "content_margin": [0, 0],
+        },
+        // ------------------------------------------------------------- TOOLTIP
+        // background
+        {
+            "class": "tool_tip_control",
+            "content_margin": 10,
+            "layer0.tint": "var(c2_base)",
+            "layer0.opacity": 1.0,
+        },
+        // label
+        {
+            "class": "tool_tip_label_control",
+            "color": "var(background)",
+            "font.size": 14
+        },
+        // ----------------------------------------------------------- TREE VIEW
+        // global container
+        {
+            "class": "sidebar_container",
+            "content_margin": [0, 0, 1, 0],
+            "layer0.tint": "var(c5_base)",
+            "layer0.opacity": 1.0,
+        },
+        // tree
+        {
+            "class": "sidebar_tree",
+            "row_padding": [16, 8, 8, 0],
+            "indent": 16,
+            "indent_top_level": true,
+            "layer0.tint": "var(background)",
+            "layer0.opacity": 1.0,
+        },
+        // row
+        {
+            "class": "tree_row",
+            "layer0.tint": "var(c5_base)",
+            "layer0.opacity": 0.0,
+        },
+        {
+            "class": "tree_row",
+            "attributes": ["hover"],
+            "layer0.opacity": 1.0,
+        },
+        // heading
+        {
+            "class": "sidebar_heading",
+            "color": "transparent",
+        },
+        // label
+        {
+            "class": "sidebar_label",
+            "color": "color(var(c1_base) blend(var(background) 30%))",
+            "font.size": "var(base_font_size)",
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"class": "sidebar_tree", "attributes": ["hover"]}],
+            "color": "color(var(c1_base) blend(var(background) 70%))",
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+            "color": "var(c2_base)",
+        },
+        // close button
+        {
+            "class": "close_button",
+            "content_margin": 0,
+        },
+        // expand and collapse
+        {
+            "class": "disclosure_button_control",
+            "content_margin": 8,
+            "layer0.texture": "Theme - Sandstorm/assets/folded.png",
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 0.3,
+            "layer1.texture": "Theme - Sandstorm/assets/unfolded.png",
+            "layer1.tint": "var(c1_base)",
+            "layer1.opacity": 0.0,
+        },
+        {
+            "class": "disclosure_button_control",
+            "attributes": ["expanded"],
+            "layer0.opacity": 0.0,
+            "layer1.opacity": 0.3,
+        },
+        {
+            "class": "disclosure_button_control",
+            "attributes": ["expandable"],
+            "parents": [{"class": "sidebar_tree", "attributes": ["hover"]}],
+            "layer0.opacity": 0.5,
+            "layer1.opacity": 0.0,
+        },
+        {
+            "class": "disclosure_button_control",
+            "attributes": ["expanded"],
+            "parents": [{"class": "sidebar_tree", "attributes": ["hover"]}],
+            "layer0.opacity": 0.0,
+            "layer1.opacity": 0.5,
+        },
+        // folder
+        {
+            "class": "icon_folder",
+            "content_margin": 0,
+        },
+        // file
+        {
+            "class": "icon_file_type",
+            "content_margin": 0,
+        },
+        // versionning
+        {
+            "class": "vcs_status_badge",
+            "content_margin": 3,
+            "layer0.tint": "var(c1_base)",
+            "layer0.opacity": 0.0
+        },
+        {
+            "class": "vcs_status_badge",
+            "parents": [{"class": "file_system_entry", "attributes": ["ignored"]}],
+            "layer0.tint": "var(c5_base)",
+        },
+        {
+            "class": "vcs_status_badge",
+            "parents": [{"class": "file_system_entry", "attributes": ["modified"]}],
+            "layer0.tint": "var(c2_base)",
+        },
+        {
+            "class": "vcs_status_badge",
+            "parents": [{"class": "file_system_entry", "attributes": ["untracked"]}],
+            "layer0.tint": "var(c2_base)",
+        },
+        {
+            "class": "vcs_status_badge",
+            "parents": [{"class": "file_system_entry", "attributes": ["deleted"]}],
+            "layer0.tint": "var(c2_base)",
+        },
+        {
+            "class": "vcs_status_badge",
+            "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+            "layer0.tint": "var(c4_base)",
+        },
+        {
+            "class": "vcs_status_badge",
+            "parents": [{"class": "sidebar_tree", "attributes": ["hover"]}],
+            "layer0.opacity": 1.0
+        },
+        // --------------------------------------------------------------- VIEWS
+        {
+            "class": "grid_layout_control",
+            "border_size": 1,
+            "border_color": "var(c5_base)"
+        },
+        {
+            "class": "minimap_control",
+            "viewport_color": "var(c1_base)",
+            "viewport_opacity": 0.0
+        },
+        {
+            "class": "minimap_control",
+            "attributes": ["hover"],
+            "viewport_opacity": 0.1
+        },
+        {
+            "class": "fold_button_control",
+            "content_margin": 8,
+            "layer0.texture": "Theme - Sandstorm/assets/folded.png",
+            "layer0.tint": "var(c2_base)",
+            "layer0.inner_margin": 2,
+            "layer0.opacity": 1.0,
+        },
+        {
+            "class": "fold_button_control",
+            "attributes": ["expanded"],
+            "layer0.opacity": 0.0,
+        },
+    ]
+}
