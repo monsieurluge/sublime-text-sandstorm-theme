@@ -379,7 +379,6 @@
         {
             "name": "Headers level 2",
             "scope": "text.html.markdown markup.heading.2.markdown, text.html.markdown markup.heading.2.markdown entity.name.section.markdown",
-            // "background": "var(c1_faded)",
             "foreground": "var(c2_base)",
             "font_style": "bold",
         },
@@ -390,14 +389,15 @@
         },
         {
             "name": "Markdown code delimiters",
-            "scope": "text.html.markdown meta.code-fence.definition, text.html.markdown punctuation.definition.raw",
-            "background": "var(background)",
-            "foreground": "var(c1_faded)"
+            "scope": "text.html.markdown meta.code-fence.definition, text.html.markdown markup.raw.inline.markdown punctuation.definition.raw",
+            "foreground": "var(c1_faded)",
+            "background": "var(c5_base)",
         },
         {
             "name": "Markdown code language",
             "scope": "text.html.markdown constant.other.language-name.markdown",
-            "foreground": "var(c1_faded)"
+            "foreground": "var(c1_faded)",
+            "background": "var(c5_base)"
         },
         {
             "name": "Markdown list punctuation",
