@@ -368,6 +368,12 @@
             "foreground": "var(error_red)",
             "selection_foreground": "var(error_red)",
         },
+        // ------------------------------------------------------------ MAKEFILE
+        {
+            "name": "Markdown title",
+            "scope": "source.makefile meta.function.makefile entity.name.function.makefile",
+            "foreground": "var(c2_base)"
+        },
         // ------------------------------------------------------------ MARKDOWN
         {
             "name": "Markdown title",
