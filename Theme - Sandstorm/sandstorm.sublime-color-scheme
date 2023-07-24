@@ -364,7 +364,7 @@
         },
         {
             "name": "avoid those!",
-            "scope": "source.ts meta.export.js meta.class.js meta.block.js meta.function.js meta.block.js meta.try.js meta.block.js meta.type.js meta.generic.js support.type.any.js, source.ts meta.import.js string.quoted.double.js, constant.language.null.js, support.type.primitive.null.js, support.type.primitive.undefined.js, constant.language.undefined.js",
+            "scope": "source.ts meta.export.js meta.class.js meta.block.js meta.function.js meta.block.js meta.try.js meta.block.js meta.type.js meta.generic.js support.type.any.js, source.ts meta.import.js string.quoted.double.js, constant.language.null.js, support.type.primitive.null.js, support.type.primitive.undefined.js, constant.language.undefined.js, source.ts support.type.any.js",
             "foreground": "var(error_red)",
             "selection_foreground": "var(error_red)",
         },
