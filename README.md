@@ -47,4 +47,3 @@ Where is the _preferences_ file?
     "scroll_context_lines": 4,
 }
 ```
-

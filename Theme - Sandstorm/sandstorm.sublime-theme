@@ -8,7 +8,7 @@
         "c3_base": "#bd8b69",       // types, scope modifiers _ sandstorm
         "c4_base": "#685e4f",       // comments, gutter _ stone gray
         // background variables
-        "c5_base": "#44413c",       // line highlight, status bar _ black ink
+        "c5_base": "#44413c",       // line highlight _ black ink
         "c6_base": "#9e1030",       // invalid _ jester red
         "c7_base": "black",         // unused
         "c8_base": "black",         // unused

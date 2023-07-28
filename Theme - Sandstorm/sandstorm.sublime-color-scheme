@@ -6,8 +6,7 @@
         "c1_base": "#e5ccaf",       // code _ gray sand
         "c2_base": "#fc9e21",       // keywords _ radiant yellow
         "c3_base": "#bd8b69",       // types, scope modifiers _ sandstorm
-        "c4_base": "#947764",       // comments, gutter _ woodsmoke
-        "c1_faded": "color(var(c1_base) alpha(0.2))",
+        "c4_base": "#685e4f",       // comments, gutter _ stone gray
         // background variables
         "c5_base": "#44413c",       // line highlight _ black ink
         "c6_base": "#9e1030",       // invalid _ jester red
@@ -32,7 +31,7 @@
         "foreground": "var(c1_base)",
         "guide": "var(background)",
         "gutter": "var(background)",
-        "gutter_foreground": "var(c1_faded)",
+        "gutter_foreground": "var(c4_base)",
         "gutter_foreground_highlight": "var(c1_base)",
         "highlight": "var(c2_base)",
         "inactive_selection": "var(c2_base)",
@@ -60,7 +59,7 @@
         {
             "name": "comment",
             "scope": "comment, punctuation.definition.comment, comment.block.documentation entity.other.attribute-name",
-            "foreground": "var(c1_faded)",
+            "foreground": "var(c4_base)",
             "selection_foreground": "color(var(background) blend(var(c2_base) 50%))",
         },
         {
@@ -149,7 +148,7 @@
         {
             "name": "type",
             "scope": "storage.type",
-            "foreground": "var(c4_base)",
+            "foreground": "var(c3_base)",
         },
         {
             "name": "special type",
@@ -179,7 +178,7 @@
         {
             "name": "find results line number",
             "scope": "constant.numeric.line-number.find-in-files",
-            "foreground": "var(c1_faded)"
+            "foreground": "var(c4_base)"
         },
         {
             "name": "find results matching line number",
@@ -232,7 +231,7 @@
         {
             "name": "imported things",
             "scope": "meta.import.js variable.other, meta.export.js meta.type.js support.class.js, meta.export.js support.class.builtin.js, meta.export.js support.type.primitive",
-            "foreground": "var(c4_base)",
+            "foreground": "var(c3_base)",
         },
         {
             "name": "export keyword",
@@ -276,7 +275,7 @@
         {
             "name": "docblock",
             "scope": "keyword.other.phpdoc",
-            "foreground": "var(c1_faded)"
+            "foreground": "var(c4_base)"
         },
         {
             "name": "namespace",
@@ -297,7 +296,7 @@
         {
             "name": "line information",
             "scope": "meta.diff.range.unified, entity.name.section.diff",
-            "foreground": "var(c1_faded)"
+            "foreground": "var(c4_base)"
         },
         {
             "name": "insertion",
@@ -360,7 +359,7 @@
         {
             "name": "decorator annotations",
             "scope": "source.ts meta.annotation, source.ts meta.annotation variable.function, source.ts meta.annotation meta.binding.destructuring.mapping.js punctuation.section.block, source.ts meta.annotation variable.parameter, source.ts meta.annotation keyword.declaration.function.arrow.js, source.ts meta.annotation.js support.class.builtin.js, source.ts meta.annotation variable, source.ts meta.annotation string.quoted, source.ts meta.annotation meta.group support.class.js, source.ts meta.annotation meta.mapping.js punctuation.section.block, source.ts meta.annotation meta.function-call.method.js support.class.js, source.ts meta.annotation constant.numeric, source.ts meta.annotation constant.language.boolean, source.ts meta.annotation keyword.operator.spread, source.ts meta.annotation keyword.operator, source.ts meta.annotation keyword.declaration.js, source.ts meta.annotation.js entity.name.function.js, source.ts meta.annotation keyword.control, source.ts meta.annotation support, source.ts meta.annotation storage.modifier, source.ts meta.annotation support.type.primitive",
-            "foreground": "var(c1_faded)"
+            "foreground": "var(c4_base)"
         },
         {
             "name": "avoid those!",
@@ -378,7 +377,7 @@
         {
             "name": "Markdown title",
             "scope": "punctuation.definition.heading.begin.markdown",
-            "foreground": "var(c1_faded)"
+            "foreground": "var(c4_base)"
         },
         {
             "name": "Headers level 1",
@@ -401,13 +400,13 @@
         {
             "name": "Markdown code delimiters",
             "scope": "text.html.markdown meta.code-fence.definition, text.html.markdown markup.raw.inline.markdown punctuation.definition.raw",
-            "foreground": "var(c1_faded)",
+            "foreground": "var(c4_base)",
             "background": "var(c5_base)",
         },
         {
             "name": "Markdown code language",
             "scope": "text.html.markdown constant.other.language-name.markdown",
-            "foreground": "var(c1_faded)",
+            "foreground": "var(c4_base)",
             "background": "var(c5_base)"
         },
         {
@@ -423,7 +422,7 @@
         {
             "name": "Markdown link punctuation",
             "scope": "meta.link.inline.markdown punctuation.definition.metadata, text.html.markdown punctuation.definition.link",
-            "foreground": "var(c1_faded)"
+            "foreground": "var(c4_base)"
         },
         {
             "name": "Markdown emphasis",
@@ -433,7 +432,7 @@
         {
             "name": "Markdown emphasis punctuation",
             "scope": "markup.italic.markdown punctuation.definition, markup.bold.markdown punctuation.definition",
-            "foreground": "var(c1_faded)"
+            "foreground": "var(c4_base)"
         },
     ]
 }
