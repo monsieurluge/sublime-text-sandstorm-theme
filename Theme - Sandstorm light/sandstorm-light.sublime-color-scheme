@@ -1,12 +1,12 @@
 {
     "name": "sandstorm light",
     "variables": {
-        "background": "#d8ccbb",    // main background _ sand shell
+        "background": "#ede3d2",    // main background _ antique white
         // foreground variables
-        "c1_base": "#3b3a36",       // code _ peat
-        "c2_base": "#b55a30",       // keywords _ rust
-        "c3_base": "#807669",       // types, scope modifiers _ fallen rock
-        "c4_base": "#b49f89",       // comments, gutter _ nomad
+        "c1_base": "#5a4632",       // code _ desert palm
+        "c2_base": "#d86d39",       // keywords _ jaffa orange
+        "c3_base": "#998978",       // types, scope modifiers _ dune
+        "c4_base": "#daccb4",       // comments, gutter _ bleached sand
         // background variables
         "c5_base": "#cebaa8",       // line highlight, status bar _ smoke gray
         "c6_base": "#9e1030",       // invalid _ jester red
@@ -148,7 +148,7 @@
         {
             "name": "type",
             "scope": "storage.type",
-            "foreground": "var(c4_base)",
+            "foreground": "var(c3_base)",
         },
         {
             "name": "special type",
@@ -231,7 +231,7 @@
         {
             "name": "imported things",
             "scope": "meta.import.js variable.other, meta.export.js meta.type.js support.class.js, meta.export.js support.class.builtin.js, meta.export.js support.type.primitive",
-            "foreground": "var(c4_base)",
+            "foreground": "var(c3_base)",
         },
         {
             "name": "export keyword",
