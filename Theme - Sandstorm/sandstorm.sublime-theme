@@ -409,12 +409,14 @@
         // tab set
         {
             "class": "tabset_control",
-            "tab_overlap": 2,
-            "tab_min_width": 100,
-            "tab_height": 30,
+            "tab_overlap": -6,
+            "tab_min_width": 60,
+            "tab_height": 6,
+            "tab_width": 100,
             "mouse_wheel_switch": false,
             "layer0.tint": "var(background)",
             "layer0.opacity": 1.0,
+            "content_margin": 10
         },
         // left scroll button
         {
@@ -429,32 +431,24 @@
         // tab
         {
             "class": "tab_control",
-            "content_margin": [16, 0, 16, 0],
-            "max_margin_trim": 6,
+            "layer0.tint": "var(c5_base)",
+            "layer0.opacity": 1.0,
+        },
+        {
+            "class": "tab_control",
+            "attributes": ["selected"],
+            "layer0.tint": "var(c4_base)",
+        },
+        {
+            "class": "tab_control",
+            "attributes": ["highlighted"],
+            "layer0.tint": "var(c2_base)",
         },
         // label
         {
             "class": "tab_label",
-            "fg": "var(c4_base)",
-            "font.size": "var(base_font_size)",
-        },
-        // label - inactive view
-        {
-            "class": "tab_label",
-            "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-            "fg": "var(c1_base)",
-        },
-        // label - current view
-        {
-            "class": "tab_label",
-            "parents": [{"class": "tab_control", "attributes": ["highlighted"]}],
-            "fg": "var(c2_base)",
-        },
-        // label - transient
-        {
-            "class": "tab_label",
-            "attributes": ["transient"],
-            "font.italic": true
+            "fg": "transparent",
+            "font.size": 0.1,
         },
         // close button
         {
