@@ -615,12 +615,12 @@
         {
             "class": "minimap_control",
             "viewport_color": "var(c1_base)",
-            "viewport_opacity": 0.0
+            "viewport_opacity": 0.1
         },
         {
             "class": "minimap_control",
             "attributes": ["hover"],
-            "viewport_opacity": 0.1
+            "viewport_opacity": 0.2
         },
         {
             "class": "fold_button_control",
