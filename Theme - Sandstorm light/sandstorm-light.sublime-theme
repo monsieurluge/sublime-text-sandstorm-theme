@@ -520,7 +520,7 @@
         // label
         {
             "class": "sidebar_label",
-            "color": "color(var(c1_base) blend(var(background) 30%))",
+            "color": "color(var(c1_base) blend(var(background) 20%))",
             "font.size": "var(base_font_size)",
         },
         {
